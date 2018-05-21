@@ -6,7 +6,30 @@
     <p>Im checking if it will work</p>
     <div id="main">Zone with id="main" ; use it to test interaction with DOM elements</div>
     <script type="text/python3">
-      
-    </script
+      #imports necessary modules
+      from browser import document, html
+
+      #Clears main field
+      document["main"].clear()
+
+      #Creates button in main field
+      def button():
+        document["main"] <= html.B("<button>Is this a  <i>p y t h o n</i>?</button>")
+        document["main"] <= html.P("<br></br>")
+        document["main"] <= html.B("<button>I work too I guess?</button>")
+      button()
+
+      #Source link for python image
+      link = "https://cdn.vox-cdn.com/thumbor/eGz4fu6l6vSVW25VfvYwS862GEE=/0x0:500x375/320x0/filters:focal(0x0:500x375)/cdn.vox-cdn.com/uploads/chorus_asset/file/10835833/n4scgse21iuz.jpg"
+      #create function to insert image
+      def insert_image(event):
+        #Clears document
+        document["main"].clear()
+        #inserts python image at link
+        document["main"] <= html.IMG(src=link, height=200)
+
+      #binds insert_image funtion to global event "click"
+      document["main"].bind("click", insert_image)
+    </script>
   </body>
 </html>
