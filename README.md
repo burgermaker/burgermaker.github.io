@@ -3,7 +3,7 @@
 ### _Python_ and _JS_ powered burger making!
 
 Well don't just stand there!\
-[__Get Grilling__](https://burgermaker.github.io/) :hamburger:\
+[__Get Grilling__](https://burgermaker.github.io/) :hamburger:
 
 In-webpage python support provided by:\
 [Brython](https://brython.info/)
