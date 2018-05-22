@@ -15,7 +15,7 @@ Svg loading animation by:\
 
 __Made for AP CS 2018 final project by:__
 * Cassie,
-* Becca
+* Becca,
 * Sky,
 * Zack,
 * and Michael
