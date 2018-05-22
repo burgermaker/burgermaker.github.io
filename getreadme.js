@@ -14,4 +14,4 @@ var div = document.getElementById('main');
 var node = document.createElement("P");
 var textnode = document.createTextNode(xhr.responseText.toString());
 node.appendChild(textnode);
-document.getElementById("main").appendChild(node);
+document.getElementById("main").append(node);
