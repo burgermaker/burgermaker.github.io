@@ -19,7 +19,7 @@ function processRequest(e) {
       var readget = xhr.responseText.toString();
       readget = readget.replace("# ","#");
       var div = document.getElementById('main');
-      var node = document.createElement("P");
+      var node = document.createElement("");
       var textnode = document.createTextNode(readget);
       node.appendChild(textnode);
       document.getElementById("main").append(node);
