@@ -11,5 +11,7 @@ xhr.addEventListener("readystatechange", processRequest, false);
 xhr.send();
 
 var div = document.getElementById('main');
-
-div += xhr.responseText.toString();
+var node = document.createElement("P");
+var textnode = document.createTextNode(xhr.responseText.toString());
+node.appendChild(textnode);
+document.getElementById("main").appendChild(node);
