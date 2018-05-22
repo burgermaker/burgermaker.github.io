@@ -10,6 +10,9 @@ Well don't just stand there!\
 In-webpage python support provided by:\
 [Brython](https://brython.info/)
 
+Svg loading animation by:\
+[Nikhil Krishnan](https://codepen.io/nikhil8krishnan/pen/rVoXJa/)
+
 __Made for AP CS 2018 final project by:__
 * Cassie,
 * Becca
