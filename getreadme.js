@@ -6,6 +6,7 @@ function processRequest(e) {
   if (xhr.readyState == 4 && xhr.status == 200) {
       document.getElementById("main").innerHTML = "";
       var readget = xhr.responseText.toString();
+      //process readget
       var div = document.getElementById('main');
       var node = document.createElement("P");
       var textnode = document.createTextNode(readget);
