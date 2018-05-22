@@ -9,8 +9,8 @@ function killele(x){
 function mdreplace(str){
   document.getElementById(str).innerHTML = micromarkdown.parse(
   document.getElementById(str).innerHTML.toString());
-  var images document.getElementById("main").querySelectorAll('[alt]');
-  images.forEach()
+  var images = document.getElementById("main").querySelectorAll('[alt]');
+  images.forEach(killele);
 }
 
 function processRequest(e) {
