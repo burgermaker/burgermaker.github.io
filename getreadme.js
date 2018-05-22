@@ -1,10 +1,16 @@
 var xhr = new XMLHttpRequest();
 
 xhr.open('GET', "https://raw.githubusercontent.com/burgermaker/burgermaker.github.io/master/README.md", true);
+
+function killele(x){
+  x.parentNode.removeChild(x);
+}
+
 function mdreplace(str){
   document.getElementById(str).innerHTML = micromarkdown.parse(
   document.getElementById(str).innerHTML.toString());
-  //remove img
+  var images document.getElementById("main").querySelectorAll('[alt]');
+  images.forEach()
 }
 
 function processRequest(e) {
