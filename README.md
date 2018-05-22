@@ -3,7 +3,7 @@
 ### _Python_ and _JS_ powered burger making!
 
 Well don't just stand there!\
-[__Get Grilling__](https://burgermaker.github.io/) :hamburger:
+__[Get Grilling](https://burgermaker.github.io/)__ :hamburger:
 
 ![BOOF](https://raw.githubusercontent.com/burgermaker/burgermaker.github.io/master/boofs%20burgers.jpg)
 
