@@ -4,8 +4,7 @@ xhr.open('GET', "https://raw.githubusercontent.com/burgermaker/burgermaker.githu
 function mdreplace(str){
   document.getElementById(str).innerHTML = micromarkdown.parse(
   document.getElementById(str).innerHTML.toString());
-  document.getElementById("main").outerHTML = document.getElementById("main").outerHTML.replace(".jpg","--" + '>')
-  document.getElementById("main").outerHTML = document.getElementById("main").outerHTML.replace("<img","<!--").toString();
+  //remove img
 }
 
 function processRequest(e) {
