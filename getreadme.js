@@ -4,7 +4,7 @@ xhr.open('GET', "https://raw.githubusercontent.com/burgermaker/burgermaker.githu
 
 function processRequest(e) {
   if (xhr.readyState == 4 && xhr.status == 200) {
-      document.getElementById(main).innerHTML = "";
+      document.getElementById("main").innerHTML = "";
       var readget = xhr.responseText.toString();
       var div = document.getElementById('main');
       var node = document.createElement("P");
