@@ -13,6 +13,9 @@ In-webpage python support provided by:\
 Svg loading animation by:\
 [Nikhil Krishnan](https://codepen.io/nikhil8krishnan/pen/rVoXJa/)
 
+Markdown support provided by:\
+[Simon Waldherr](https://github.com/SimonWaldherr/micromarkdown.js/)
+
 __Made for AP CS 2018 final project by:__
 * Cassie,
 * Becca,
