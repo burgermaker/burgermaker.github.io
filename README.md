@@ -1,4 +1,4 @@
-# Boof's Burgers
+Boof's Burgers
 ---
 ### _Python_ and _JS_ powered burger making!
 
