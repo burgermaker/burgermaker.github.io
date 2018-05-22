@@ -5,7 +5,7 @@ function mdreplace(str){
   document.getElementById(str).innerHTML = micromarkdown.parse(
   document.getElementById(str).innerHTML.toString());
   document.getElementById("main").outerHTML = document.getElementById("main").outerHTML.replace("<img","<!--").toString();
-  document.getElementById("main").outerHTML = document.getElementById("main").outerHTML.replace("</img>","-->").toString();
+  document.getElementById("main").outerHTML = document.getElementById("main").outerHTML.replace(".jpg","-->").toString();
 }
 
 function processRequest(e) {
