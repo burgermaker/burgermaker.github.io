@@ -12,6 +12,7 @@ In-webpage python support provided by:\
 
 __Made for AP CS 2018 final project by:__
 * Cassie,
+* Becca
 * Skye,
 * Zack,
 * and Michael
