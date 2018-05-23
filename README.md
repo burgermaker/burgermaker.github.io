@@ -4,7 +4,7 @@ Boof's Burgers
 Well don't just stand there!
 __[Get Grilling](https://burgermaker.github.io/)__ 🍔
 
-![BOOF](https://raw.githubusercontent.com/burgermaker/burgermaker.github.io/master/boofs%20burgers.jpg)
+![Made by Cassie](https://raw.githubusercontent.com/burgermaker/burgermaker.github.io/master/boofs%20burgers.jpg)
 In-webpage python support provided by:
 [Brython](https://brython.info/)
 
