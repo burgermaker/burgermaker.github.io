@@ -1,6 +1,9 @@
 body {
-  background-color: white;
+  background-color: #fffff;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 32px;
 }
+
 .container {
   display: table;
   width: 100vw;
