@@ -1,3 +1,9 @@
 .box1{
-  border: 1px solid green ;
+  width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: 48vw;
+    margin-right: auto;
 }
