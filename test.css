@@ -1,7 +1,6 @@
 body {
   background-color: #fffff;
   font-family: 'Roboto Mono', monospace;
-  border-radius: 32px;
 }
 
 .container {
@@ -16,6 +15,7 @@ body {
   left: 0px;
   width: 33vw;
   height: 100vh;
+  border-radius: 32px;
 }
 
 .builder {
@@ -24,4 +24,5 @@ body {
   right: 0px;
   width: 67vw;
   height: 100vh;
+  border-radius: 32px;
 }
