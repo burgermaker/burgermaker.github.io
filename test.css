@@ -1,12 +1,13 @@
 .container {
   display: table;
   width: 100vw;
+  height: 100vh;
 }
 
 .ingredients {
   background-color: #ff9e2c;
   position: absolute;
-  left: 0px;
+  left: 0%;
   width: 50%;
   transform: translate(-50%, -50%);
 }
@@ -14,7 +15,6 @@
 .builder {
   background-color: #b6701e;
   position: absolute;
-  right: 0px;
+  right: 0%;
   width: 50%;
-    transform: translate(-50%, -50%);
 }
