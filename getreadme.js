@@ -23,6 +23,11 @@ function processRequest(e) {
       node.appendChild(textnode);
       document.getElementById("main").append(node);
       mdreplace("main");
+      var brs = document.getElementById("main").getElementsByTagName('br');
+      brs[0].parentNode.removeChild(brs[0]);
+      brs[0].parentNode.removeChild(brs[0]);
+      brs[0].parentNode.removeChild(brs[0]);
+      brs[0].parentNode.removeChild(brs[0]);
   }
 }
 
