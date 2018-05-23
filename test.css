@@ -7,14 +7,15 @@
 .ingredients {
   background-color: #ff9e2c;
   position: absolute;
-  left: 0%;
-  width: 50%;
-  transform: translate(-50%, -50%);
+  left: 0px;
+  width: 50vw;
+  height: 100vh;
 }
 
 .builder {
   background-color: #b6701e;
   position: absolute;
-  right: 0%;
-  width: 50%;
+  right: 0px;
+  width: 50vw;
+  height: 100vh;
 }
