@@ -8,7 +8,6 @@
 .dropzone {
     overflow: visible;
     margin: .5em;
-    padding: 1em;
     color: #666;
     text-align: center;
     background: #ccc;
@@ -34,7 +33,8 @@
     background-color: transparent;
     color: #fff;
     text-align: center;
-
+    position:relative
+    width: 12vw;
     -ms-touch-action: none;
         touch-action: none;
 }
