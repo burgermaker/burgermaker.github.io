@@ -2,7 +2,7 @@ Boof's Burgers
 ---
 ### _Python_ and _JS_ powered burger making!
 Well don't just stand there!
-__[Get Grilling](https://burgermaker.github.io/maker/test.html/)__ 🍔
+__[Get Grilling](https://burgermaker.github.io/maker/test.html)__ 🍔
 
 ![Made by Cassie](https://raw.githubusercontent.com/burgermaker/burgermaker.github.io/master/boofs%20burgers.jpg)
 In-webpage python support provided by:
