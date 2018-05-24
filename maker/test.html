@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="interactable.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script type="text/javascript" src="burgerhandler.js"></script>
+  <script src="interact.js"></script>
+    <script src="interactable.js"></script>
+</head>
+  <body>
+    <section class="container">
+      <div class="ingredients">
+        <h1>Ingredients</h1>
+	<hr class="coolhr">
+        <div class="draggable js-drag" style="width: 12vw;"><img src="eyes.png" style="width: 12vw;"></img></div>
+	<div class="draggable js-drag" style="width: 12vw;"><img src="Tomato.png" style="width: 12vw;"></img></div>
+	<div class="draggable js-drag" style="width: 12vw;"><img src="Bun.png" style="width: 12vw;"></img></div>
+      </div>
+      <div class="builder">
+        <h1>Right Half</h1>
+	<div class="dropzone js-drop">Dropzone</div>
+	<div class="dropzone js-drop">Dropzone</div>
+        <div class="dropzone js-drop">Dropzone</div>
+	<input type="number" id="myNumber" value="1">
+	<button onclick="addB()" class="button">Add Ingredient Layer</button>
+      </div>
+    </section>
+  </body>
+</html>

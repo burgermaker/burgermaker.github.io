@@ -1,0 +1,58 @@
+body {
+  background-color: #F3B347;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  display: table;
+  width: 100vw;
+  height: auto;
+  margin-bottom:2vh;
+}
+
+.ingredients {
+  background-color: #dddddd;
+  position: absolute;
+  left: 0px;
+  width: 21vw;
+  height: 200vh;
+  border-radius: 8px;
+  padding: 1vh;
+  margin-left: 0px;
+  margin-right: 21vw;
+  padding-right: 2vw;
+  box-shadow: 0 8px 16px 0 #000000;
+}
+
+.builder {
+  background-color: #ffffff;
+  position: absolute;
+  right: 0px;
+  width: 75vw;
+  height: 200vh;
+  border-radius: 8px;
+  padding: 1vh;
+  margin-left: 21vw;
+  margin-right: 0vw;
+  box-shadow: 0 8px 16px 0 #000000;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.coolhr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
