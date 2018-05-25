@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="interactable.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script type="text/javascript" src="burgerhandler.js"></script>
-  <script src="interact.js"></script>
-    <script src="interactable.js"></script>
+  <script type="text/javascript" src="interact.js"></script>
+  <script type="text/javascript" src="interactable.js"></script>
+  <script type="text/javascript" src="divz.js"></script>
 </head>
-  <body>
+  <body onmouseover="updatedivz()">
     <section class="container">
-      <div class="ingredientbar">
+      <div class="ingredientbar" onmouseover="updatedivz()">
         <h1>Ingredients</h1>
 	<hr class="coolhr">
+        <div id="ingredientlist">
 	<div class="draggable js-drag"><img src="Ingredients/bb top bun.png" class="ingredient"></img></div>
 	<div class="draggable js-drag"><img src="Ingredients/bb bottom bun.png" class="ingredient"></img></div>
 	<div class="draggable js-drag"><img src="Ingredients/bb patty.png" class="ingredient"></img></div>
@@ -23,14 +24,14 @@
 	<div class="draggable js-drag"><img src="Ingredients/bb lettuce.png" class="ingredient"></img></div>
 	<div class="draggable js-drag"><img src="Ingredients/bb onions.png" class="ingredient"></img></div>
 	<div class="draggable js-drag"><img src="Ingredients/bb tomato.png" class="ingredient"></img></div>
+        </div>
       </div>
-      <div class="builder">
-        <h1>Right Half</h1>
-	<div id=IngredientDiv class="dropzone js-drop">Drop Ingredients On Me!</div>
-	<div id=IngredientDiv class="dropzone js-drop">Drop Ingredients On Me!</div>
-        <div id=IngredientDiv class="dropzone js-drop">Drop Ingredients On Me!</div>
+      <div class="builder" onmouseover="updatedivz()">
+        <h1>🍔Burger Builder🍔</h1>
 	<input type="number" id="myNumber" value="1">
-	<button onclick="addB()" class="button">Add Ingredient Layer</button>
+	<button onclick="addNewDiv(myNumber.value)" class="button">Add Ingredient Layer</button>
+	<p>Drag Ingredients onto these <b> ⬇️⬇️⬇️</b></p>
+	<script type="text/javascript" src="burgerhandler.js"></script>
       </div>
     </section>
   </body>

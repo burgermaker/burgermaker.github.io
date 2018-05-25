@@ -61,7 +61,14 @@ function setupDropzone (el, accept) {
     })
     .on('drop', function (event) {
       removeClass(event.target, '-drop-over');
-      event.target.innerHTML = event.relatedTarget.innerHTML
+      event.target.innerHTML = event.relatedTarget.innerHTML.toString();
+      /*
+      var link = event.relatedTarget.children[0].getAttribute("src").toString();
+      var nt = document.querySelectorAll("div > img[src=\"" + link + "\"]");
+      document.getElementById("ingredientlist").innerHTML = nt[0].outerHTML + document.getElementById("ingredientlist").innerHTML.toString();
+      nt[0].parentNode.remove(nt[0]);
+      nt[0].parentNode.remove(nt[0]);
+      */
     });
 }
 

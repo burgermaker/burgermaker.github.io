@@ -58,6 +58,6 @@ body {
 }
 
 .ingredient{
+    position: relative;
     width: 12vw;
-    position:relative;
 }
