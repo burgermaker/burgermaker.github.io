@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel="stylesheet" href="test.css">
-  <title>Burger Maker!</title>
   <link rel="stylesheet" href="interactable.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script type="text/javascript" src="interact.js"></script>
@@ -13,6 +12,7 @@
     <section class="container">
       <div class="ingredientbar" onmouseover="updatedivz()">
         <h1>Ingredients</h1>
+	<button onclick="highlight();" class="button">Highlight Draggable<br>Ingredients</button>
 	<hr class="coolhr">
         <div id="ingredientlist">
 	<div class="draggable js-drag"><img src="Ingredients/bb top bun.png" class="ingredient"></img></div>
@@ -30,7 +30,7 @@
       <div class="builder" onmouseover="updatedivz()">
         <h1>🍔Burger Builder🍔</h1>
 	<input type="number" id="myNumber" value="1">
-	<button onclick="addNewDiv(myNumber.value)" class="button">Add Ingredient Layer</button>
+	<button onclick="addNewDiv(myNumber.value);" class="button">Add Ingredient Layer</button>
 	<p>Drag Ingredients onto these <b> ⬇️⬇️⬇️</b></p>
 	<script type="text/javascript" src="burgerhandler.js"></script>
       </div>
