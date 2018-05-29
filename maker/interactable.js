@@ -5,6 +5,7 @@ interact.maxInteractions(Infinity);
 // setup draggable elements.
 interact('.js-drag')
   .draggable({
+    autoScroll: true,
     max: Infinity,
     snap: {
       relativePoints: [{ x: 0.5, y: 0.5 }],
