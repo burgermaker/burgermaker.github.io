@@ -1,5 +1,5 @@
-﻿let transformProp;
-
+let transformProp;
+var snap = true;
 interact.maxInteractions(Infinity);
 
 // setup draggable elements.
@@ -8,7 +8,14 @@ interact('.js-drag')
     autoScroll: true,
     max: Infinity,
     snap: {
-      relativePoints: [{ x: 0.5, y: 0.5 }],
+      targets: [
+        function f(){
+          if(snap){
+            return { x: 0.12*document.documentElement.clientWidth, range: Infinity};
+          }
+        }
+      ],
+      endOnly: true
     },
   })
   .on('dragstart', function (event) {
@@ -49,27 +56,25 @@ function setupDropzone (el, accept) {
     .on('dropactivate', function (event) {
       const active = event.target.getAttribute('active')|0;
       event.target.setAttribute('active', active + 1);
+      event.relatedTarget.style.left="0px";
+      event.relatedTarget.style.top="0px";
     })
     .on('dropdeactivate', function (event) {
       const active = event.target.getAttribute('active')|0;
       event.target.setAttribute('active', active - 1);
     })
     .on('dragenter', function (event) {
+      snap = false;
       addClass(event.target, '-drop-over');
     })
     .on('dragleave', function (event) {
+      snap = true;
       removeClass(event.target, '-drop-over');
     })
     .on('drop', function (event) {
-      removeClass(event.target, '-drop-over');
+      snap = false;
       event.target.innerHTML = event.relatedTarget.innerHTML.toString();
-      /*
-      var link = event.relatedTarget.children[0].getAttribute("src").toString();
-      var nt = document.querySelectorAll("div > img[src=\"" + link + "\"]");
-      document.getElementById("ingredientlist").innerHTML = nt[0].outerHTML + document.getElementById("ingredientlist").innerHTML.toString();
-      nt[0].parentNode.remove(nt[0]);
-      nt[0].parentNode.remove(nt[0]);
-      */
+      removeClass(event.target, '-drop-over');
     });
 }
 
