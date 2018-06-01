@@ -39,6 +39,7 @@ body {
 }
 
 .button {
+    font-family: 'Roboto Mono', monospace;
     background-color: #ff1a1a;
     border: none;
     color: white;
