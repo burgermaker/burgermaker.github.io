@@ -2,7 +2,7 @@
     overflow: visible;
     margin: .5em;
     text-align: center;
-    background: #ffffcc;
+    background: #ff8;
     line-height: 4em;
     border: 4px dashed transparent;
     transition: background .15s linear, border-color .15s linear;
