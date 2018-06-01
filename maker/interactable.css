@@ -1,9 +1,8 @@
 .dropzone {
     overflow: visible;
     margin: .5em;
-    color: #666;
     text-align: center;
-    background: #ccc;
+    background: #ffffb3;
     line-height: 4em;
     border: 4px dashed transparent;
     transition: background .15s linear, border-color .15s linear;
@@ -13,8 +12,7 @@
 .dropzone.-drop-possible { border-color: #666; }
 
 .dropzone.-drop-over {
-    background: #666;
-    color: #fff;
+    background: #ffff66;
 }
 
 .draggable {

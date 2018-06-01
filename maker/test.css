@@ -11,11 +11,11 @@ body {
 }
 
 .ingredientbar {
-  background-color: #dddddd;
+  background-color: #ffff66;
   position: absolute;
   left: 0px;
   width: 21vw;
-  height: auto;
+  height: 200vh;
   border-radius: 8px;
   padding: 1vh;
   margin-left: 0px;
@@ -25,7 +25,7 @@ body {
 }
 
 .builder {
-  background-color: #ffffff;
+  background-color: #ffffb3;
   position: absolute;
   right: 0px;
   width: 75vw;
@@ -38,7 +38,7 @@ body {
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #ff1a1a;
     border: none;
     color: white;
     padding: 15px 32px;
