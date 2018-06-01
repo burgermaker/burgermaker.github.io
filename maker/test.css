@@ -15,7 +15,7 @@ body {
   position: absolute;
   left: 0px;
   width: 21vw;
-  height: 200vh;
+  height: auto;
   border-radius: 8px;
   padding: 1vh;
   margin-left: 0px;
@@ -29,12 +29,13 @@ body {
   position: absolute;
   right: 0px;
   width: 75vw;
-  height: 200vh;
+  height: 300vh;
   border-radius: 8px;
   padding: 1vh;
   margin-left: 21vw;
   margin-right: 0vw;
   box-shadow: 0 8px 16px 0 #000000;
+  overflow-y: auto;
 }
 
 .button {
