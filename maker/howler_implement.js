@@ -2,7 +2,7 @@ var sound = new Howl({
   src: ['Boofs Burgers.wav'],
   autoplay: true,
   loop: true,
-  volume: 0.03,
+  volume: 0.3,
   onend: function() {
     console.log('Finished!');
   }
