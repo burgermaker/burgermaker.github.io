@@ -24,8 +24,7 @@
     background-color: transparent;
     color: #fff;
     text-align: center;
-    position:relative
-    width: 12vw;
+    position:relative;
     -ms-touch-action: none;
-        touch-action: none;
+    touch-action: none;
 }
