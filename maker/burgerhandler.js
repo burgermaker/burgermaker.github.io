@@ -9,8 +9,9 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-if(getParameterByName("in") != null){
-  addBurger(getParameterByName("in").toString());
+if(getParameterByName("name") != null){
+  getParameterByName("name").toString();
+  getParameterByName("burger").toString();
 }
 
 function addNewDiv(iter){
@@ -35,3 +36,21 @@ function highlight(){
 }
 
 addNewDiv(3);
+
+function enterEv(){
+    // Get the input field
+  var input = document.getElementById("myNumber");
+  console.log("oof");
+  // Execute a function when the user releases a key on the keyboard
+  input.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      document.getElementById("myBtn").click();
+      console.log("asddjw")
+      enterEv();
+    }
+  });
+}

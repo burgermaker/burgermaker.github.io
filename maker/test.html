@@ -18,35 +18,38 @@
 	<button onclick="highlight();" class="button">Highlight Draggable<br>Ingredients</button>
 	<hr class="coolhr">
         <div id="ingredientlist">
-		<div class="draggable js-drag"><img src="Ingredients/bb top bun.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb bottom bun.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb patty.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb bacon.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb swiss cheese.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb cheddar cheese.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb colby jack cheese.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb lettuce.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb onions.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/bb tomato.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="Ingredients/tide pod.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Quran.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Bible.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Book of Mormon.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Vedas.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Croissant.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Fallout76.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Hopes and Dreams.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Severed Eyeball.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/tf is this.png" class="ingredient" ondragstart="return false;"/></div>
-		<div class="draggable js-drag"><img src="memes/Ohyes.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb top bun.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb bottom bun.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb patty.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb bacon.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb swiss cheese.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb cheddar cheese.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb colby jack cheese.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb lettuce.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb onions.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/bb tomato.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="Ingredients/tide pod.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Quran.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Bible.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Book of Mormon.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Vedas.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Croissant.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Fallout76.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Hopes and Dreams.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Severed Eyeball.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/tf is this.png" class="ingredient" ondragstart="return false;"/></div>
+					<div class="draggable js-drag"><img src="memes/Ohyes.png" class="ingredient" ondragstart="return false;"/></div>
         </div>
       </div>
       <div class="builder" onmouseover="updatedivz()">
         <h1>🍔Burger Builder🍔</h1>
 	<input type="number" id="myNumber" value="1">
-	<button onclick="addNewDiv(myNumber.value);" class="button">Add Ingredient Layer</button>
+	<button id="myBtn" onclick="addNewDiv(myNumber.value);" class="button">Add Ingredient Layer</button>
 	<p>Drag Ingredients onto these <b> ⬇️⬇️⬇️</b></p>
-	<script type="text/javascript" src="burgerhandler.js"></script>
+	<script id="myInput" type="text/javascript" src="burgerhandler.js"></script>
+	<script>
+	enterEv();
+	</script>
       </div>
     </section>
   </body>
