@@ -3,6 +3,6 @@ function updatedivz(){
 	var n;
 	for(i = 0; i < x.length; i++){
 	n = 99-i;
-	x[i].setAttribute("style","z-index: " + n + ";");
+	x[i].setAttribute("style","z-index: " + n + "; margin-top: -25px;");
 	}
 }
