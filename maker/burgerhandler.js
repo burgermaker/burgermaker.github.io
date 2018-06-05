@@ -38,19 +38,45 @@ function highlight(){
 addNewDiv(3);
 
 function enterEv(){
-    // Get the input field
   var input = document.getElementById("myNumber");
-  console.log("oof");
-  // Execute a function when the user releases a key on the keyboard
   input.addEventListener("keyup", function(event) {
-    // Cancel the default action, if needed
     event.preventDefault();
-    // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
-      // Trigger the button element with a click
       document.getElementById("myBtn").click();
-      console.log("asddjw")
       enterEv();
     }
   });
+}
+
+function getDivInfo(a){
+  if(document.querySelectorAll("#IngredientDiv")[a].children[0] != null){
+    return(document.querySelectorAll("#IngredientDiv")[a].children[0].getAttribute("src").split("/")[1].split(".")[0]);
+  } else {
+    return(null);
+  }
+}
+
+function getDivCount(){
+  return(document.querySelectorAll("#IngredientDiv").length);
+}
+
+function getInsertedDivs(){
+  return(document.querySelectorAll("#IngredientDiv"));
+}
+
+function stringify(){
+  var str = "";
+  for(var i = 0; i < getDivCount(); i++){
+    switch(getDivInfo(i)){
+      case "bb bacon":
+        str += "a";
+        break;
+      case "bb bottom bun":
+        str += "b";
+        break;
+      default:
+        str += "0";
+    }
+  }
+  return(str);
 }
