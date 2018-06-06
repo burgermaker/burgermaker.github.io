@@ -55,6 +55,7 @@ h1 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+    transform: translateY(-12px);
 }
 
 .coolhr {
@@ -73,6 +74,7 @@ h1 {
     display:block;
     border:none;
     border-bottom:1px solid #ccc;
-    width:100%
+    width:100%;
     margin:0px;
+    float: left;
 }
