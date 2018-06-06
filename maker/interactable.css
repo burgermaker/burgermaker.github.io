@@ -9,8 +9,10 @@
     height: 4vh;
 }
 .ouf {
-position:relative;
-left: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dropzone.-drop-possible { border-color: #666; }
