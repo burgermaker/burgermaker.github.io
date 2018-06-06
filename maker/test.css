@@ -7,6 +7,10 @@ h1 {
   text-align: center;
 }
 
+.sbs {
+  float:left;
+}
+
 .container {
   display: table;
   width: 100vw;
