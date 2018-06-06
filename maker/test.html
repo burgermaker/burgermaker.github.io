@@ -11,20 +11,19 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.12/howler.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 	<script type="text/javascript" src="howler_implement.js"></script>
+
 	<title>Burger Maker!</title>
-	<style>
-	#button {
-	position:relative;
-	left: 1000px;
-	}
-	</style>
+
 </head>
 
 <body onmouseover="updatedivz()">
 	<section class="container">
 		<div class="ingredientbar" onmouseover="updatedivz()">
 			<h1>Ingredients</h1>
-			<button onclick="highlight();" class="button" style="text-align: center;">Highlight Draggable<br>Ingredients</button>
+			<div class="ouf">
+				<button onclick="highlight();" class="button" style="text-align: center;">Highlight Draggable<br>Ingredients</button>
+			</div>
+
 			<hr class="coolhr">
 			<div id="ingredientlist">
 				<div class="draggable js-drag">

@@ -8,6 +8,10 @@
     transition: background .15s linear, border-color .15s linear;
     height: 4vh;
 }
+.ouf {
+position:relative;
+left: 1000px;
+}
 
 .dropzone.-drop-possible { border-color: #666; }
 
