@@ -212,5 +212,11 @@ function insertBurger(burger) {
 
 function activateCopy() {
   new ClipboardJS('#copy');
-  document.querySelectorAll("#copy")[0].setAttribute("data-clipboard-text", "https://burgermaker.github.io/maker/test.html?name=nm&burger=" + stringify());
+  var myName = "";
+  if (document.getElementById("myName").nodeValue != null) {
+    myName = document.getElementById("myName").nodeValue.toString;
+  } else {
+    myName = "";
+  }
+  document.querySelectorAll("#copy")[0].setAttribute("data-clipboard-text", "https://burgermaker.github.io/maker/test.html?name=" + myName + "&burger=" + stringify());
 }
