@@ -3,6 +3,10 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
   display: table;
   width: 100vw;
