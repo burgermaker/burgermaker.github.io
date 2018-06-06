@@ -213,7 +213,7 @@ function insertBurger(burger) {
 function activateCopy() {
   new ClipboardJS('#copy');
   var myName = "";
-  if (document.getElementById("myName").nodeValue != null) {
+  if (document.getElementById("myName").value != null && document.getElementById("myName").value != "") {
     myName = document.getElementById("myName").value.toString;
   } else {
     myName = "";
