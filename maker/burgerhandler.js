@@ -214,7 +214,7 @@ function activateCopy() {
   new ClipboardJS('#copy');
   var myName = "";
   if (document.getElementById("myName").nodeValue != null) {
-    myName = document.getElementById("myName").nodeValue.toString;
+    myName = document.getElementById("myName").value.toString;
   } else {
     myName = "";
   }
