@@ -3,7 +3,7 @@ function updatedivz() {
 	var n;
 	for (i = 0; i < x.length; i++) {
 		n = 99 - i;
-		x[i].setAttribute("style", "z-index: " + n + "; margin-top: -25px;");
+		x[i].setAttribute("style", "z-index: " + n + "; margin-top: -25px;"); //Editing "margin-top" changes how far out of the box the ingredients go (up or down).
 	}
 }
 
