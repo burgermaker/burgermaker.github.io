@@ -216,7 +216,7 @@ var InteractEvent = function () {
     }
 
     var angle = 180 * Math.atan2(interaction.prevEvent.velocityY, interaction.prevEvent.velocityX) / Math.PI;
-    var overlap = 22.5;
+    var overlap = 40; //changed this
 
     if (angle < 0) {
       angle += 360;
