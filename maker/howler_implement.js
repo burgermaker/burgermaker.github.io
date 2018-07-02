@@ -3,10 +3,8 @@ var sound = new Howl({
   autoplay: true,
   loop: true,
   volume: 0.3,
-  onend: function() {
-    console.log('Finished!');
-  }
+//   onend: function() {
+//   }
 });
 
 sound.play();
-console.log("your mom gay");
