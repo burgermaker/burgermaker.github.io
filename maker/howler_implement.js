@@ -3,8 +3,6 @@ var sound = new Howl({
   autoplay: true,
   loop: true,
   volume: 0.3,
-//   onend: function() {
-//   }
 });
 
 sound.play();
