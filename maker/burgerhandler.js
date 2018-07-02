@@ -11,7 +11,7 @@ function getParameterByName(name, url) {
 
 function addNewDiv(iter) {
   for (var i = 1; i <= iter; i++) {
-    document.getElementsByClassName("builder")[0].innerHTML += "<div id=IngredientDiv class=\"dropzone js-drop\"></div>";
+    document.getElementsByClassName("builder")[0].innerHTML += "<div id=IngredientDiv class=\"dropzone js-drop\" ontouchend="updatedivz();"></div>";
   }
 }
 
